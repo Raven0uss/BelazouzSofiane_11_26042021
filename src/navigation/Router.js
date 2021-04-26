@@ -7,32 +7,56 @@ import Logement from "../pages/Logement";
 
 import NotFound from "./NotFound";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../layout/Header";
+import Footer from "../layout/Footer";
+import WrapComponent from "./WrapComponent";
 
-class Router extends React.Component {
+const routes = [
+  {
+    id: "about",
+    path: "/about",
+    exact: true,
+    component: (props) => <About {...props} />,
+  },
+  {
+    id: "logement",
+    path: "/logement/:id",
+    exact: true,
+    component: (props) => <Logement {...props} id={props.match.params.id} />,
+  },
+  {
+    id: "home",
+    path: "/",
+    exact: true,
+    component: (props) => <Home {...props} />,
+  },
+  {
+    id: "404",
+    path: "*",
+    exact: false,
+    component: () => <NotFound />,
+  },
+];
+
+class Router extends React.PureComponent {
   render() {
     return (
       <BrowserRouter>
         <Header />
-        <Switch>
-          <Route
-            exact
-            path="/about"
-            component={(props) => <About {...props} />}
-          />
-          <Route
-            exact
-            path="/logement/:id"
-            component={(props) => (
-              <Logement {...props} id={props.match.params.id} />
-            )}
-          />
-          <Route exact path="/" component={(props) => <Home {...props} />} />
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
+        <WrapComponent>
+          <Switch>
+            {routes.map((route) => {
+              return (
+                <Route
+                  key={route.id}
+                  exact={route.exact}
+                  path={route.path}
+                  component={route.component}
+                />
+              );
+            })}
+          </Switch>
+        </WrapComponent>
         <Footer />
       </BrowserRouter>
     );

@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 100px;
+  margin-top: 40px;
+}
+
+.header-logo {
+  width: 210.32px;
+  height: 68px;
+}
+
+.links-container {
+  display: flex;
+  width: 309px;
+  justify-content: flex-end;
+}
+
+.link-item {
+  margin-left: 57px;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.active-link {
+  text-decoration: underline;
+}
