@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import WrapComponent from "./WrapComponent";
 
 import Home from "../pages/Home";
 import About from "../pages/About";
@@ -9,7 +10,6 @@ import NotFound from "./NotFound";
 
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
-import WrapComponent from "./WrapComponent";
 
 const routes = [
   {

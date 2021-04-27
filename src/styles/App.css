@@ -2,3 +2,21 @@
   margin: 0 100px;
   flex: 1 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+  #content {
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #content {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #content {
+    margin: 0 10px;
+  }
+}

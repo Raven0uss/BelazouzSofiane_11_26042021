@@ -1,7 +1,6 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 0 100px;
   margin-top: 40px;
 }
@@ -13,16 +12,68 @@ header {
 
 .links-container {
   display: flex;
-  width: 309px;
-  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .link-item {
-  margin-left: 57px;
   color: var(--main-color);
   text-decoration: none;
+  font-size: 24px;
+  white-space: nowrap;
+  margin-left: 57px;
 }
 
 .active-link {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    margin: 0 30px;
+    margin-top: 30px;
+  }
+
+  .header-logo {
+    width: 145px;
+    height: 47px;
+  }
+
+  .link-item {
+    font-size: 18px;
+    margin-left: 28px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    margin: 0 20px;
+    margin-top: 20px;
+  }
+
+  .link-item {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header {
+    margin: 0 10px;
+    margin-top: 10px;
+  }
+
+  .header-logo {
+    width: 50%;
+    height: auto;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  .link-item {
+    margin-left: unset;
+  }
 }
