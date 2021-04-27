@@ -21,9 +21,15 @@ body,
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin-block-start: unset;
+  margin-block-end: unset;
 }
 
 @import "./App.css";
 @import "./Header.css";
 @import "./Footer.css";
+
+@import "./NotFound.css";
