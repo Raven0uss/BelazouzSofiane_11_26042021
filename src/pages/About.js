@@ -4,7 +4,9 @@ class About extends React.Component {
   render() {
     return (
       <>
-        About
+        <div className="about-illustration">
+          <div className="about-illustration-mask" />
+        </div>
       </>
     );
   }
