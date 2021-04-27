@@ -24,7 +24,7 @@ const collapses = [
   },
 ];
 
-class About extends React.Component {
+class About extends React.PureComponent {
   render() {
     return (
       <>
@@ -32,7 +32,7 @@ class About extends React.Component {
           <div className="about-illustration-mask" />
         </div>
         {collapses.map((collapse) => (
-          <Collapse {...collapse} key={collapse.title} />
+          <Collapse {...collapse} key={collapse.title} innerClass="large" />
         ))}
       </>
     );

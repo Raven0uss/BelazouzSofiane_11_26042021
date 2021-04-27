@@ -4,7 +4,7 @@ import WrapComponent from "./WrapComponent";
 
 import Home from "../pages/Home";
 import About from "../pages/About";
-import Logement from "../pages/Logement";
+import Housing from "../pages/Housing";
 
 import NotFound from "./NotFound";
 
@@ -19,10 +19,10 @@ const routes = [
     component: (props) => <About {...props} />,
   },
   {
-    id: "logement",
-    path: "/logement/:id",
+    id: "housing",
+    path: "/housing/:id",
     exact: true,
-    component: (props) => <Logement {...props} id={props.match.params.id} />,
+    component: (props) => <Housing {...props} id={props.match.params.id} />,
   },
   {
     id: "home",

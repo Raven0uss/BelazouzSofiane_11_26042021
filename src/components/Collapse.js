@@ -4,8 +4,8 @@ const defineCollapseType = (content) => {
   switch (typeof content) {
     case "string":
       return "text";
-    case "array":
-      return "list";
+    case "object":
+      return Array.isArray(content) ? "list" : undefined;
     default:
       return undefined;
   }
@@ -21,6 +21,9 @@ class Collapse extends React.Component {
 
     this.handleOpen = this.handleOpen.bind(this);
     this.type = defineCollapseType(this.props.content);
+
+    this.innerClass =
+      this.props.innerClass === undefined ? "" : `-${this.props.innerClass}`;
   }
 
   handleOpen() {
@@ -34,9 +37,11 @@ class Collapse extends React.Component {
     return (
       <div className="collapse-container">
         <div className="collapse-title-block" onClick={this.handleOpen}>
-          <div className="collapse-title-text">{this.props.title}</div>
+          <div className={"collapse-title-text" + this.innerClass}>
+            {this.props.title}
+          </div>
           <div
-            className={`collapse-title-arrow ${
+            className={`${"collapse-title-arrow" + this.innerClass} ${
               this.state.open ? "collapse-arrow-open" : ""
             }`}
           />
@@ -45,10 +50,18 @@ class Collapse extends React.Component {
           <div className="collapse-content-block">
             {/* Collapse with text */}
             {this.type === "text" && (
-              <p className="collapse-content-text">{this.props.content}</p>
+              <p className={"collapse-content-text" + this.innerClass}>
+                {this.props.content}
+              </p>
             )}
             {/* Collapse with list */}
-            {this.type === "list" && <div>{this.props.content}</div>}
+            {this.type === "list" && (
+              <ul className={"collapse-content-list" + this.innerClass}>
+                {this.props.content.map((element, index) => (
+                  <li key={`${element}-${index}`}>{element}</li>
+                ))}
+              </ul>
+            )}
           </div>
         )}
       </div>

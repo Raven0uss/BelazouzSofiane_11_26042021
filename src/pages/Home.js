@@ -1,8 +1,8 @@
 import React from "react";
-import locations from "../assets/json/data.json";
+import housingList from "../assets/json/data.json";
 import Thumbnail from "../components/Thumbnail";
 
-class Home extends React.Component {
+class Home extends React.PureComponent {
   render() {
     return (
       <>
@@ -12,9 +12,9 @@ class Home extends React.Component {
           </div>
           <div className="home-illustration-mask" />
         </div>
-        <div id="location-list-container">
-          {locations.map((location) => {
-            return <Thumbnail {...location} key={location.id} />;
+        <div id="housing-list-container">
+          {housingList.map((housing) => {
+            return <Thumbnail {...housing} key={housing.id} />;
           })}
         </div>
       </>

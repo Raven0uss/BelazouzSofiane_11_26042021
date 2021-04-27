@@ -1,0 +1,22 @@
+.host-informations {
+  display: flex;
+  align-items: center;
+}
+
+.host-identity {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main-color);
+  line-height: 25.67px;
+}
+
+.host-identity > p {
+  text-align: right;
+}
+
+.host-picture {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  margin-left: 10px;
+}

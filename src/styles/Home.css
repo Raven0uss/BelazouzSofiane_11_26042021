@@ -35,7 +35,7 @@
   z-index: 100;
 }
 
-#location-list-container {
+#housing-list-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 340px);
   column-gap: 9px;
@@ -83,7 +83,7 @@
     text-align: left;
   }
 
-  #location-list-container {
+  #housing-list-container {
     grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
     background-color: unset;
     padding-top: unset;
@@ -101,7 +101,7 @@
     margin-top: 31px;
   }
 
-  #location-list-container {
+  #housing-list-container {
     grid-template-columns: 1fr;
     background-color: unset;
     padding-top: unset;

@@ -17,7 +17,14 @@ body,
   -webkit-font-smoothing: antialiased;
 }
 
-p {
+p,
+h3,
+h4,
+ul {
   margin-block-start: unset;
   margin-block-end: unset;
+}
+
+ul {
+  padding-inline-start: unset;
 }

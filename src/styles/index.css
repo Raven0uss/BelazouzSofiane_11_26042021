@@ -24,8 +24,12 @@
 /* Pages */
 @import "./About.css";
 @import "./Home.css";
+@import "./Housing.css";
 
 /* Components */
 @import "./Collapse.css";
 @import "./Thumbnail.css";
 @import "./Carousel.css";
+@import "./Avatar.css";
+@import "./Tag.css";
+@import "./Rating.css";

@@ -55,6 +55,7 @@ header {
   .link-item {
     font-size: 12px;
     margin-left: 10px;
+    text-transform: uppercase;
   }
 }
 

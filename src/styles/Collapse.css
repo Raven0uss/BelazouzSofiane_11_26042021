@@ -14,24 +14,37 @@
   cursor: pointer;
 }
 
-.collapse-title-text {
+.collapse-title-text,
+.collapse-title-text-large {
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
+  line-height: 25.67px;
 }
 
-.collapse-title-arrow {
+.collapse-title-text-large {
+  font-size: 24px;
+  line-height: 34.22px;
+}
+
+.collapse-title-arrow,
+.collapse-title-arrow-large {
   background-image: url("../assets/images/arrow-down.png");
-  width: 23.86px;
-  height: 14.06px;
+  width: 18px;
+  height: 18px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
+}
+
+.collapse-title-arrow-large {
+  width: 22px;
+  height: 22px;
 }
 
 .collapse-arrow-open {
   transform: rotateX(180deg);
-  background-position: top;
+  background-position: center;
 }
 
 .collapse-content-block {
@@ -45,21 +58,31 @@
   animation: fade 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.collapse-content-text {
+.collapse-content-text,
+.collapse-content-list,
+.collapse-content-text-large,
+.collapse-content-list-large {
   color: var(--main-color);
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
+  line-height: 25.67px;
 }
 
+.collapse-content-text-large,
+.collapse-content-list-large {
+  font-size: 24px;
+  line-height: 34.22px;
+}
+
+.collapse-content-list {
+  list-style: none;
+}
 /* Tablet */
 @media screen and (max-width: 768px) {
-  .collapse-title-text {
+  .collapse-title-text,
+  .collapse-title-text-large {
     font-size: 20px;
-  }
-
-  .collapse-title-arrow {
-    width: 18px;
-    height: 12px;
+    line-height: 26px;
   }
 
   .collapse-content-block {
@@ -69,20 +92,25 @@
     padding-right: 10px;
   }
 
-  .collapse-content-text {
+  .collapse-content-text,
+  .collapse-content-text-large {
     font-size: 18px;
+    line-height: 24px;
   }
 }
 
 /* Mobile */
 @media screen and (max-width: 500px) {
-  .collapse-title-text {
+  .collapse-title-text,
+  .collapse-title-text-large {
     font-size: 13px;
+    line-height: 18.54px;
   }
 
-  .collapse-title-arrow {
-    width: 15.2px;
-    height: 8.98px;
+  .collapse-title-arrow,
+  .collapse-title-arrow-large {
+    width: 12px;
+    height: 12px;
   }
 
   .collapse-content-block {
@@ -92,7 +120,9 @@
     padding-right: 6px;
   }
 
-  .collapse-content-text {
+  .collapse-content-text,
+  .collapse-content-text-large {
     font-size: 12px;
+    line-height: 17.11px;
   }
 }

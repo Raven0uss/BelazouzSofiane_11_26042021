@@ -5,14 +5,14 @@ class Thumbnail extends React.PureComponent {
   render() {
     return (
       <Link
-        to={`/logement/${this.props.id}`}
-        className="thumbnail-location-element"
+        to={`/housing/${this.props.id}`}
+        className="thumbnail-housing-element"
         style={{
           backgroundImage: `url(${this.props.cover})`,
         }}
       >
-        <div className="thumbnail-location-mask">
-          <p className="thumbnail-location-title">{this.props.title}</p>
+        <div className="thumbnail-housing-mask">
+          <p className="thumbnail-housing-title">{this.props.title}</p>
         </div>
       </Link>
     );
