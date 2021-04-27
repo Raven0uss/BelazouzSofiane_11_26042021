@@ -14,7 +14,7 @@ class Home extends React.Component {
         </div>
         <div id="location-list-container">
           {locations.map((location) => {
-            return <Thumbnail {...location} />;
+            return <Thumbnail {...location} key={location.id} />;
           })}
         </div>
       </>
