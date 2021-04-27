@@ -28,6 +28,7 @@
   text-align: center;
 }
 
+/* Tablet */
 @media screen and (max-width: 768px) {
   .text-error-code {
     font-size: 142px;
@@ -46,6 +47,7 @@
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 500px) {
   .text-error-code {
     font-size: 96px;

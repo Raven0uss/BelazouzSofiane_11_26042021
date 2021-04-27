@@ -27,6 +27,7 @@ header {
   text-decoration: underline;
 }
 
+/* Tablet */
 @media screen and (max-width: 768px) {
   header {
     margin: 0 30px;
@@ -44,6 +45,7 @@ header {
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 500px) {
   header {
     margin: 0 20px;
@@ -56,6 +58,7 @@ header {
   }
 }
 
+/* Tiny */
 @media screen and (max-width: 300px) {
   header {
     margin: 0 10px;

@@ -6,6 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 44px;
+  margin-bottom: 31px;
 }
 
 .about-illustration-mask {
@@ -16,6 +17,7 @@
   border-radius: 25px;
 }
 
+/* Tablet */
 @media screen and (max-width: 768px) {
   .about-illustration {
     width: 100%;
@@ -31,6 +33,7 @@
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 500px) {
   .about-illustration {
     margin-top: 17px;

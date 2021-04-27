@@ -3,18 +3,21 @@
   flex: 1 0 auto;
 }
 
+/* Tablet */
 @media screen and (max-width: 768px) {
   #content {
     margin: 0 30px;
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 500px) {
   #content {
     margin: 0 20px;
   }
 }
 
+/* Tiny */
 @media screen and (max-width: 300px) {
   #content {
     margin: 0 10px;

@@ -1,38 +1,28 @@
-:root {
-  --main-color: #ff6060;
-}
-
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-html,
-body,
-#root {
-  height: 100%;
-  width: 100%;
+/* Variables */
+:root {
+  /* Colors */
+  --main-color: #ff6060;
+  /* Layout */
+  --footer-height: 209px;
 }
 
-body,
-#root {
-  display: flex;
-  flex-direction: column;
-
-  margin: 0;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-p {
-  margin-block-start: unset;
-  margin-block-end: unset;
-}
-
+/* Root */
+@import "./reset.css";
+@import "./animations.css";
 @import "./App.css";
+
+/* Layout */
 @import "./Header.css";
 @import "./Footer.css";
 
+/* Navigation */
 @import "./NotFound.css";
 
+/* Pages */
 @import "./About.css";
 
+/* Components */
+@import "./Collapse.css";
