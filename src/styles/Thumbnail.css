@@ -1,0 +1,38 @@
+.thumbnail-location-element {
+  height: 340px;
+  background-color: var(--main-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.thumbnail-location-mask {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffffff00, #00000080);
+  border-radius: 10px;
+}
+
+.thumbnail-location-title {
+  margin-left: 20px;
+  margin-right: 20px;
+  align-self: flex-end;
+  margin-bottom: 20px;
+
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+  .thumbnail-location-element {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 255px;
+  }
+}

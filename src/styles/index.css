@@ -23,6 +23,8 @@
 
 /* Pages */
 @import "./About.css";
+@import "./Home.css";
 
 /* Components */
 @import "./Collapse.css";
+@import "./Thumbnail.css";

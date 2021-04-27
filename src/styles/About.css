@@ -20,11 +20,9 @@
 /* Tablet */
 @media screen and (max-width: 768px) {
   .about-illustration {
-    width: 100%;
     height: 258px;
     border-radius: 10px;
     background-image: url("../assets/images/background_about_mobile.png");
-    background-size: cover;
     background-position: right bottom;
   }
 
