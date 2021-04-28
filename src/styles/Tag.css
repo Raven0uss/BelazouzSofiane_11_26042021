@@ -10,3 +10,12 @@
   line-height: 19.96px;
   margin-top: 10px;
 }
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+  .housing-tag {
+    font-size: 10px;
+    padding: 1px 27.07px;
+    margin-top: 5px;
+  }
+}

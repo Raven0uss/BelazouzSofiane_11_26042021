@@ -20,3 +20,15 @@
   border-radius: 50%;
   margin-left: 10px;
 }
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+  .host-identity {
+    font-size: 12px;
+    line-height: 17.11px;
+  }
+  .host-picture {
+    height: 32px;
+    width: 32px;
+  }
+}

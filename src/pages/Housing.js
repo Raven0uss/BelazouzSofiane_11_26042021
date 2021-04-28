@@ -21,20 +21,20 @@ class Housing extends React.PureComponent {
     return (
       <>
         <Carousel images={this.housing.pictures} />
-        <div className="housing-metadata-block">
-          <div className="housing-head-block">
-            <div className="housing-title-block">
-              <h3 className="housing-title">{this.housing.title}</h3>
-              <h4 className="housing-location">{this.housing.location}</h4>
-            </div>
+        <div className="housing-head-block">
+          <div className="housing-title-container">
+            <h3 className="housing-title">{this.housing.title}</h3>
+            <h4 className="housing-location">{this.housing.location}</h4>
+          </div>
+          <div className="housing-host-container">
             <Avatar {...this.housing.host} />
           </div>
-          <div className="housing-middle-block">
-            <div className="housing-tag-list-container">
-              {this.housing.tags.map((tag) => (
-                <Tag tag={tag} key={tag} />
-              ))}
-            </div>
+          <div className="housing-tag-list-container">
+            {this.housing.tags.map((tag) => (
+              <Tag tag={tag} key={tag} />
+            ))}
+          </div>
+          <div className="housing-rating-container">
             <Rating rating={this.housing.rating} />
           </div>
         </div>

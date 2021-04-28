@@ -21,10 +21,20 @@ header {
   font-size: 24px;
   white-space: nowrap;
   margin-left: 57px;
+  transition-duration: 300ms;
+}
+
+.link-item:hover {
+  opacity: 0.7;
 }
 
 .active-link {
   text-decoration: underline;
+  cursor: default;
+}
+
+.active-link:hover {
+  opacity: 1;
 }
 
 /* Tablet */

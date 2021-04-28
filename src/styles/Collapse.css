@@ -93,7 +93,9 @@
   }
 
   .collapse-content-text,
-  .collapse-content-text-large {
+  .collapse-content-text-large,
+  .collapse-content-list,
+  .collapse-content-list-large {
     font-size: 18px;
     line-height: 24px;
   }
@@ -121,7 +123,9 @@
   }
 
   .collapse-content-text,
-  .collapse-content-text-large {
+  .collapse-content-text-large,
+  .collapse-content-list,
+  .collapse-content-list-large {
     font-size: 12px;
     line-height: 17.11px;
   }

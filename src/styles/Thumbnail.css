@@ -5,8 +5,15 @@
   background-size: cover;
   margin-top: 25px;
   margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 10px;
   text-decoration: none;
+  transition-duration: 400ms;
+}
+
+.thumbnail-housing-element:hover {
+  opacity: 0.8;
 }
 
 .thumbnail-housing-mask {
@@ -26,6 +33,16 @@
   color: #fff;
   font-weight: 500;
   font-size: 18px;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .thumbnail-housing-element {
+    margin-left: unset;
+    margin-right: unset;
+    margin-top: unset;
+    margin-bottom: 20px;
+  }
 }
 
 /* Mobile */
