@@ -42,21 +42,23 @@ class Router extends React.PureComponent {
   render() {
     return (
       <BrowserRouter>
-        <Header />
-        <WrapComponent>
-          <Switch>
-            {routes.map((route) => {
-              return (
-                <Route
-                  key={route.id}
-                  exact={route.exact}
-                  path={route.path}
-                  component={route.component}
-                />
-              );
-            })}
-          </Switch>
-        </WrapComponent>
+        <div id="app-wrap">
+          <Header />
+          <WrapComponent>
+            <Switch>
+              {routes.map((route) => {
+                return (
+                  <Route
+                    key={route.id}
+                    exact={route.exact}
+                    path={route.path}
+                    component={route.component}
+                  />
+                );
+              })}
+            </Switch>
+          </WrapComponent>
+        </div>
         <Footer />
       </BrowserRouter>
     );
