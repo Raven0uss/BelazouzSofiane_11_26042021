@@ -99,6 +99,10 @@
 
 /* Mobile */
 @media screen and (max-width: 500px) {
+  .housing-head-block {
+    margin-top: 15px;
+  }
+
   .housing-title {
     font-size: 18px;
     line-height: 25.67px;
